@@ -1,18 +1,17 @@
-============================================================
-                 ID Card Scanner Application
-============================================================
+ID Card Scanner Application
+
 
 Overview
----------
+
 The ID Card Scanner Application is a secure desktop tool that uses 
 Optical Character Recognition (OCR) to extract and manage information 
 from physical ID cards. Users can scan from image files or webcams. 
-Extracted data — such as school and student names — is stored locally 
+Extracted data - such as school and student names - is stored locally 
 in an SQLite database. A secure login system is included.
 
-------------------------------------------------------------
+
 Features
-------------------------------------------------------------
+
 
 • User Authentication:
   - Secure login and registration with bcrypt password hashing.
@@ -41,9 +40,9 @@ Features
 • Debug Image Generation:
   - Saves intermediate images for OCR tuning and troubleshooting.
 
-------------------------------------------------------------
+
 Installation Instructions
-------------------------------------------------------------
+
 
 1. Install Python 3.x
    - Download from: https://www.python.org/
@@ -66,9 +65,9 @@ Installation Instructions
 3. Install Python Packages
    pip install opencv-python pillow pytesseract bcrypt numpy
 
-------------------------------------------------------------
+
 Usage
-------------------------------------------------------------
+
 
 1. Run the App:
    python your_main_script.py
@@ -92,20 +91,9 @@ Usage
      - Displays all records with thumbnails.
      - Each record has a delete button.
 
-------------------------------------------------------------
-Project Structure
-------------------------------------------------------------
 
-.
-├── data/
-│   ├── users.db             → SQLite database
-│   ├── card_images/         → Saved ID card images
-│   └── debug_images/        → Intermediate OCR debug images
-└── your_main_script.py      → Main Python script (e.g., app.py)
-
-------------------------------------------------------------
 Technologies Used
-------------------------------------------------------------
+
 
 • Python 3.x                  → Programming language
 • Tkinter                     → GUI framework
@@ -117,9 +105,9 @@ Technologies Used
 • NumPy                       → Numerical operations
 • uuid, os, shutil, re        → Utility modules
 
-------------------------------------------------------------
+
 Troubleshooting
-------------------------------------------------------------
+
 
 • "Tesseract not found":
   - Ensure it's installed and in system PATH.
@@ -136,9 +124,9 @@ Troubleshooting
   - Check debug images in `data/debug_images/`
   - Adjust ROI values or preprocessing steps as needed.
 
-------------------------------------------------------------
+
 Future Improvements
-------------------------------------------------------------
+
 
 • Improve OCR under various lighting/fonts.
 • Extract additional fields (ID number, expiry date, etc.).
@@ -147,11 +135,11 @@ Future Improvements
 • External config file for app settings.
 • Better cross-platform support for macOS and Linux.
 
-------------------------------------------------------------
+
 License
-------------------------------------------------------------
+
 
 This project is licensed under the MIT License.
 See the LICENSE file for more information.
 
-============================================================
+
