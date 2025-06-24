@@ -1,0 +1,12 @@
+opencv-python
+pytesseract
+Pillow
+numpy
+bcrypt
+sqlite-utils
+tk
+qrcode
+pyzbar
+reportlab
+face-recognition
+python-dotenv
